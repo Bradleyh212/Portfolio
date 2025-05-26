@@ -171,10 +171,86 @@ body{
 .highlight {
 	color: #a3b1ed;
 }
+
+.inline_social {
+	margin-left: 15px;
+	display: inline-flex;
+	gap: 10px;
+	vertical-align: middle;
+}
+
+.inline_social img {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	transition: transform 0.3s ease;
+}
+
+.inline_social img:hover {
+	transform: scale(1.2);
+}
+
+
+
+
 /*######################## Hero section end ############################*/
 
 
 
+
+/*######################## About section start ############################*/
+
+
+
+.about_section {
+	padding: 100px 150px;
+	background-color: white;
+	color: #333;
+}
+
+.about_section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 40px;
+	color: #3B4B59;
+}
+
+.job {
+	margin-bottom: 50px;
+}
+
+.job ul {
+	padding-left: 20px;
+}
+
+.job ul li {
+	margin-bottom: 8px;
+}
+
+
+/*######################## About section end ############################*/
+
+
+
+/*######################## Projects section end ############################*/
+
+
+.projects_section {
+	padding: 100px 150px;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+
+/*######################## Projects section end ############################*/
+
+
+
+
+
+
+
+
+/*######################## Footer section start ############################*/
 
 footer {
 	margin-top: auto;
@@ -183,5 +259,6 @@ footer {
 	color: #ccc;
 }
 
+/*######################## Footer section end ############################*/
 
 

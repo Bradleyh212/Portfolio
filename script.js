@@ -1,12 +1,12 @@
 window.addEventListener("scroll", function () {
-  const topNavbar = document.getElementById("top_navbar");
-  const sidebarNav = document.getElementById("side_navbar");
+  const top_navbar = document.getElementById("top_navbar");
+  const side_navbar = document.getElementById("side_navbar");
 
   if (window.scrollY > 100) {
-    topNavbar.style.display = "none";
-    sidebarNav.style.display = "flex";
+    top_navbar.style.display = "none";
+    side_navbar.style.display = "flex";
   } else {
-    topNavbar.style.display = "flex";
-    sidebarNav.style.display = "none";
+    top_navbar.style.display = "flex";
+    side_navbar.style.display = "none";
   }
 });
