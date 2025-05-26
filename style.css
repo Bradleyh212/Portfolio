@@ -28,7 +28,7 @@ body{
 }
 
 #top_navbar .collapse{
-	padding-right: 40px;
+	padding-right: 100px;
 
 }
 
@@ -94,7 +94,7 @@ body{
 .hero {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 100px;
 	color: white;
 	gap: 60px;
@@ -105,17 +105,18 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 10px;
-	padding: 150px 0px 100px 0px;
+	gap: 40px;
+	padding: 150px 150px;
 	background-color: whitesmoke;
 	min-height: 100vh;
+	box-sizing: border-box;
 }
 
 .hero_welcome {
 	flex: 1;
 	color: black;
-	width: 550px;
-	padding-left: 150px;
+	marging-left: 0;
+	max-width: 400px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -137,14 +138,22 @@ body{
 	font-weight: bold;
 }
 
+.hero_mid {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 .hero_right {
 	flex: 1;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	align-items: flex-start;
 	justify-content: center;
-	gap: 100px;
-	padding: 20px;
-	flex-wrap: nowrap;
+	max-width: 400px;
+	padding: 0;
 }
 
 
@@ -302,3 +311,80 @@ footer {
 /*######################## Footer section end ############################*/
 
 
+
+
+
+
+
+
+/*######################## Using media for phone screen layout ############################*/
+
+
+@media (max-width: 768px) {
+	#top_navbar .navbar-brand {
+		padding-left: 10px;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	/* Stack hero layout vertically */
+	.hero.split_layout {
+		flex-direction: column;
+		padding: 80px 20px;
+		text-align: center;
+	}
+
+	.hero_welcome {
+		padding-left: 0;
+		align-items: center;
+		width: 100%;
+	}
+
+	.hero_welcome h1 {
+		font-size: 2.2rem;
+	}
+
+	.hero_right {
+		flex-direction: column;
+		gap: 20px;
+		padding: 0;
+	}
+
+	.hero_right .role {
+		width: 100%;
+		font-size: 1.8rem;
+	}
+
+	.hero_mid {
+	order: -1;
+	margin-bottom: 20px;
+	}
+
+	.selfie {
+		width: 200px;
+	}
+
+	.inline_social {
+		justify-content: center;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.about_section {
+		padding: 60px 20px;
+	}
+
+	.about_section h2,
+	.projects_section h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.project_card {
+		flex: 1 1 100%;
+	}
+}
