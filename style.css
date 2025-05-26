@@ -1,5 +1,11 @@
+/*
+	Author: Bradley-Hans Desmornes
+	GitHub: https://github.com/bradleydesmornes  # or your LinkedIn
+	Date: 2025-05-24
+	Description: CSS script for my portfolio 
+*/
 body{
-	background-color: whitesmoke;
+	background-color: whitesmoke;/
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -240,6 +246,40 @@ body{
 	color: #333;
 }
 
+.projects_section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 40px;
+	color: #3B4B59;
+}
+
+.project_grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.project_card {
+	flex: 1 1 calc(20% - 30px);
+}
+
+.project_placeholder {
+	background-color: #3B4B59;
+	border-radius: 90px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: #666;
+	text-align: center;
+	transition: background 0.3s ease;
+}
+
+.project_placeholder:hover {
+	background-color: white;
+	cursor: pointer;
+}
 
 /*######################## Projects section end ############################*/
 
