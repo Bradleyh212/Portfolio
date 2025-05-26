@@ -1,12 +1,35 @@
 body{
-	background-color: #3B4B59;
+	background-color: whitesmoke;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	/*height: 100vh;*/
-
+	min-height: 100vh;
+	flex-direction: column;
 
 }
+
+
+
+/*######################## Nav bar start ############################*/
+
+#top_navbar .nav-link,
+#top_navbar .navbar-brand {
+	color: black !important;
+}
+
+#top_navbar .navbar-brand {
+	padding-left: 150px;
+}
+
+#top_navbar .collapse{
+	padding-right: 40px;
+
+}
+
+#top_navbar {
+	background-color: white !important;
+}
+
 
 .vertical_nav {
 	background: rgba(255, 255, 255, 0.05);
@@ -30,7 +53,10 @@ body{
 }
 
 .nav-link:hover {
-	background: rgba(255, 255, 255, 0.1);
+	text-decoration: underline;
+	text-decoration-color: #3B4B59;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 10px;
 }
 
 .nav-link.active {
@@ -38,47 +64,123 @@ body{
 	font-weight: bold;
 }
 
-
-
-
-
-.profile {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-
-.selfie {
+#sidebarNav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
 	width: 200px;
-	height: 180px;
-	border-radius: 50%;
-	border: 2px solid red;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 0 50px 50px 0;
+	z-index: 999;
 }
-
+/*######################## Nav bar end ############################*/
 
 .layout_container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
 
-.main_section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
+/*######################## Hero section start ############################*/
+
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 100px;
+	color: white;
+	gap: 60px;
+	min-height: 100vh;
 }
+
+.split_layout {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	padding: 150px 0px 100px 0px;
+	background-color: whitesmoke;
+	min-height: 100vh;
+}
+
+.hero_welcome {
+	flex: 1;
+	color: black;
+	width: 550px;
+	padding-left: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.hero_welcome h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+
+}
+
+.contact_btn {
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: #3B4B59;
+	color: white;
+	text-decoration: none;
+	border-radius: 50px;
+	font-weight: bold;
+}
+
+.hero_right {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+	padding: 20px;
+	flex-wrap: nowrap;
+}
+
+
+.hero_right .role {
+	font-size: 3rem;
+	font-weight: 500;
+	color: black;
+	margin-bottom: 0;
+	width: 500px;
+}
+
+.selfie {
+	width: 300px;
+	flex-shrink: 0;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: white;
+	border-radius: 51% 0% 67% 0% / 52% 40% 60% 79%;
+	overflow: hidden;
+}
+
+.selfie img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+}
+
+
+.highlight {
+	color: #a3b1ed;
+}
+/*######################## Hero section end ############################*/
+
+
+
 
 footer {
-  margin-top: auto;
-  text-align: center;
-  padding: 10px;
-  color: #ccc;
+	margin-top: auto;
+	text-align: center;
+	padding: 20px;
+	color: #ccc;
 }
 
 
