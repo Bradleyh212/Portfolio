@@ -4,8 +4,14 @@
 	Date: 2025-05-24
 	Description: CSS script for my portfolio 
 */
+
+html {
+	scroll-behavior: smooth;
+}
+
+
 body{
-	background-color: whitesmoke;/
+	background-color: whitesmoke;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -70,16 +76,6 @@ body{
 	font-weight: bold;
 }
 
-#sidebarNav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 200px;
-	background: rgba(255, 255, 255, 0.05);
-	border-radius: 0 50px 50px 0;
-	z-index: 999;
-}
 /*######################## Nav bar end ############################*/
 
 .layout_container {
@@ -115,7 +111,7 @@ body{
 .hero_welcome {
 	flex: 1;
 	color: black;
-	marging-left: 0;
+	margin-left: 0;
 	max-width: 400px;
 	display: flex;
 	flex-direction: column;
@@ -325,10 +321,7 @@ footer {
 		padding-left: 10px;
 		font-size: 1rem;
 	}
-}
 
-@media (max-width: 768px) {
-	/* Stack hero layout vertically */
 	.hero.split_layout {
 		flex-direction: column;
 		padding: 80px 20px;
@@ -369,9 +362,7 @@ footer {
 		justify-content: center;
 		margin-top: 10px;
 	}
-}
 
-@media (max-width: 768px) {
 	.about_section {
 		padding: 60px 20px;
 	}
@@ -381,10 +372,20 @@ footer {
 		font-size: 2rem;
 		text-align: center;
 	}
-}
 
-@media (max-width: 768px) {
 	.project_card {
 		flex: 1 1 100%;
 	}
+
+
+
+
 }
+
+
+
+
+
+
+
+
