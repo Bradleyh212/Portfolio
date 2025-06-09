@@ -247,14 +247,14 @@ body{
 
 .projects_section {
 	padding: 100px 150px;
-	background-color: #f9f9f9;
-	color: #333;
+
+
 }
 
 .projects_section h2 {
 	font-size: 2.5rem;
 	margin-bottom: 40px;
-	color: #3B4B59;
+
 }
 
 .project_grid {
@@ -268,8 +268,28 @@ body{
 	flex: 1 1 calc(20% - 30px);
 }
 
+#project1 {
+	background-image: url('./images/logo_vecteur.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+}
+
+#project1 a {
+	text-decoration: none;
+}
+
+#project1 .project_placeholder {
+	color: white;
+}
+
+#project1 .project_placeholder:hover {
+	color: black;
+}
+
+
 .project_placeholder {
-	background-color: #3B4B59;
 	border-radius: 90px;
 	height: 200px;
 	display: flex;
