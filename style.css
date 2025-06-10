@@ -76,6 +76,10 @@ body{
 	font-weight: bold;
 }
 
+.btn {
+	margin-top: 12px;
+}
+
 /*######################## Nav bar end ############################*/
 
 .layout_container {
