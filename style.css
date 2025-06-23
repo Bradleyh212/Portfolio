@@ -292,6 +292,28 @@ body{
 	color: black;
 }
 
+#project2 {
+	background-image: url('./images/jeu.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+}
+
+#project2 a {
+	text-decoration: none;
+}
+
+#project2 .project_placeholder {
+	color: black;
+}
+
+#project2 .project_placeholder:hover {
+	color: black;
+}
+
+
+
 
 .project_placeholder {
 	border-radius: 90px;
