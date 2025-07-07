@@ -314,6 +314,26 @@ body{
 	color: black;
 }
 
+#project3 {
+	background-image: url('./images/plant_logo.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+}
+
+#project3 a {
+	text-decoration: none;
+}
+
+#project3 .project_placeholder {
+	color: white;
+}
+
+#project3 .project_placeholder:hover {
+	color: black;
+}
+
 
 
 
