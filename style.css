@@ -334,7 +334,25 @@ body{
 	color: black;
 }
 
+#project4 {
+	background-image: url('./images/laliga_logo.jpg');
+	background-size: 95%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+}
 
+#project4 a {
+	text-decoration: none;
+}
+
+#project4 .project_placeholder {
+	color: black;
+}
+
+#project4 .project_placeholder:hover {
+	color: black;
+}
 
 
 .project_placeholder {
