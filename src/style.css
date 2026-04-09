@@ -276,7 +276,7 @@ body{
 
 
 #project1 {
-	background-image: url('./images/narc_recon_img.jpeg');
+	background-image: url('/images/narc_recon_img.jpeg');
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -297,7 +297,7 @@ body{
 }
 
 #project2 {
-	background-image: url('./images/logo_vecteur.png');
+	background-image: url('/images/logo_vecteur.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -317,7 +317,7 @@ body{
 }
 
 #project3 {
-	background-image: url('./images/jeu.png');
+	background-image: url('/images/jeu.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -337,7 +337,7 @@ body{
 }
 
 #project4 {
-	background-image: url('./images/plant_logo.png');
+	background-image: url('/images/plant_logo.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
