@@ -17,12 +17,12 @@ export const content = {
       heading: 'Work Experience',
       jobs: [
         {
-          title: 'Production Engineer (Part Time) – Voith Paper',
+          title: 'Systems Engineer (Part Time) – Voith Paper',
           location: 'Hawkesbury, ON | Jan 2026 – Present',
           bullets: [],
         },
         {
-          title: 'Production Engineering Intern – Voith Paper',
+          title: 'Systems Engineer (Intern) – Voith Paper',
           location: 'Hawkesbury, ON | Aug 2025 – Dec 2025',
           bullets: [
             'Led a cloud migration project to move the local shared drive to a dual-cloud environment using AWS and SharePoint',
@@ -79,12 +79,12 @@ export const content = {
       heading: 'Expérience professionnelle',
       jobs: [
         {
-          title: 'Ingénieur de production (temps partiel) – Voith Paper',
+          title: 'Ingénieur systèmes (temps partiel) – Voith Paper',
           location: 'Hawkesbury, ON | Janv. 2026 – Présent',
           bullets: [],
         },
         {
-          title: 'Stagiaire en ingénierie de production – Voith Paper',
+          title: 'Ingénieur systèmes (Stage) – Voith Paper',
           location: 'Hawkesbury, ON | Août 2025 – Déc. 2025',
           bullets: [
             'Dirigé un projet de migration infonuagique pour déplacer le lecteur partagé local vers un environnement double-cloud (AWS et SharePoint)',
