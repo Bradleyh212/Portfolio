@@ -1,41 +1,48 @@
+import { useState } from 'react'
+
 export default function Navbar({ lang, setLang }) {
-  const labels = {
-    en: { home: 'Home', about: 'About', projects: 'Projects', contact: 'Contact Me', toggle: 'FR' },
-    fr: { home: 'Accueil', about: 'À propos', projects: 'Projets', contact: 'Contactez-moi', toggle: 'EN' },
-  }
-  const t = labels[lang]
+  const [open, setOpen] = useState(false)
+
+  const t = {
+    en: { about: 'About', projects: 'Projects', contact: 'Contact', toggle: 'FR' },
+    fr: { about: 'À propos', projects: 'Projets', contact: 'Contact', toggle: 'EN' },
+  }[lang]
+
+  const close = () => setOpen(false)
 
   return (
-    <nav id="top_navbar" className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">Bradley-Hans Desmornes</a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item"><a className="nav-link" href="#home">{t.home}</a></li>
-            <li className="nav-item"><a className="nav-link" href="#about">{t.about}</a></li>
-            <li className="nav-item"><a className="nav-link" href="#projects">{t.projects}</a></li>
-            <li className="nav-item">
-              <a href="mailto:bradleydesmornes@gmail.com" className="nav-link">{t.contact}</a>
-            </li>
-            <li className="nav-item">
-              <button
-                className="btn btn-outline-secondary btn-sm ms-3"
-                onClick={() => setLang(lang === 'en' ? 'fr' : 'en')}
-              >
-                {t.toggle}
-              </button>
-            </li>
-          </ul>
+    <header className="fnav_wrap">
+      <nav className={`fnav${open ? ' fnav_open' : ''}`}>
+
+        {/* Brand + hamburger row (always visible) */}
+        <div className="fnav_row">
+          <a href="#home" className="fnav_brand" onClick={close}>
+            Bradley-Hans
+          </a>
+
+          <button
+            className={`fnav_toggle${open ? ' open' : ''}`}
+            onClick={() => setOpen(o => !o)}
+            aria-label="Toggle menu"
+          >
+            <span /><span /><span />
+          </button>
         </div>
-      </div>
-    </nav>
+
+        {/* Nav links — always visible on desktop, toggled on mobile */}
+        <div className="fnav_links">
+          <a href="#about"   className="fnav_link" onClick={close}>{t.about}</a>
+          <a href="#projects" className="fnav_link" onClick={close}>{t.projects}</a>
+          <a href="mailto:bradleydesmornes@gmail.com" className="fnav_link">{t.contact}</a>
+          <button
+            className="fnav_lang"
+            onClick={() => { setLang(lang === 'en' ? 'fr' : 'en'); close() }}
+          >
+            {t.toggle}
+          </button>
+        </div>
+
+      </nav>
+    </header>
   )
 }

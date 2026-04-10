@@ -1,4 +1,18 @@
 export default function Hero({ lang }) {
+  const socialIcons = (
+    <span className="inline_social">
+      <a href="https://www.linkedin.com/in/bradleyh-desmornes" target="_blank" rel="noopener noreferrer">
+        <img src="/images/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/bradleyh212" target="_blank" rel="noopener noreferrer">
+        <img src="/images/github.svg" alt="GitHub" />
+      </a>
+      <a href="/images/Bradley-Hans Desmornes copy.pdf" target="_blank" rel="noopener noreferrer">
+        <img src="/images/resume.svg" alt="Resume" />
+      </a>
+    </span>
+  )
+
   const text = {
     en: {
       greeting: "Hi, I'm",
@@ -6,7 +20,11 @@ export default function Hero({ lang }) {
       contactBtn: 'Contact Me',
       role: (
         <>
-          Innovative Software <span className="highlight">Engineer</span>
+          Innovative Software{' '}
+          <span className="highlight_row">
+            <span className="highlight">Engineer</span>
+            {socialIcons}
+          </span>
         </>
       ),
     },
@@ -16,7 +34,11 @@ export default function Hero({ lang }) {
       contactBtn: 'Contactez-moi',
       role: (
         <>
-          <span className="highlight">Ingénieur</span> Logiciel Innovant
+          <span className="highlight_row">
+            <span className="highlight">Ingénieur</span>
+            {socialIcons}
+          </span>
+          {' '}Logiciel Innovant
         </>
       ),
     },
@@ -37,20 +59,7 @@ export default function Hero({ lang }) {
       </div>
 
       <div className="hero_right">
-        <p className="role">
-          {t.role}
-          <span className="inline_social">
-            <a href="https://www.linkedin.com/in/bradleyh-desmornes" target="_blank" rel="noopener noreferrer">
-              <img src="/images/linkedin.svg" alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/bradleyh212" target="_blank" rel="noopener noreferrer">
-              <img src="/images/github.svg" alt="GitHub" />
-            </a>
-            <a href="/images/Bradley-Hans Desmornes copy.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="/images/resume.svg" alt="Resume" />
-            </a>
-          </span>
-        </p>
+        <p className="role">{t.role}</p>
       </div>
     </section>
   )

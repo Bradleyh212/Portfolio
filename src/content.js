@@ -50,6 +50,10 @@ export const content = {
         },
       ],
     },
+    techStack: {
+      heading: 'Tech Stack',
+      sub: 'Technologies I work with',
+    },
     projects: {
       heading: 'Projects',
     },
@@ -108,6 +112,10 @@ export const content = {
         },
       ],
     },
+    techStack: {
+      heading: 'Stack Technique',
+      sub: 'Technologies avec lesquelles je travaille',
+    },
     projects: {
       heading: 'Projets',
     },
@@ -119,21 +127,49 @@ export const projects = [
   {
     id: 'project1',
     label: { en: 'Narc Recon', fr: 'Narc Recon' },
-    href: 'https://github.com/Bradleyh212/Narc_Recon',
+    description: {
+      en: 'Narcotic Reconciliation system for pharmacies.',
+      fr: 'Système de réconciliation des narcotiques pour les pharmacies.',
+    },
+    tech: ['Python', 'Networking', 'Security'],
+    image: '/images/narc_recon_img.jpeg',
+    github: 'https://github.com/Bradleyh212/Narc_Recon',
+    live: null,
   },
   {
     id: 'project2',
     label: { en: 'Service Website', fr: 'Site de service' },
-    href: 'https://bradleyh212.github.io/seg_3525_devoir2/',
+    description: {
+      en: 'A responsive service-oriented web application built as a university project.',
+      fr: 'Une application web orientée services et responsive, réalisée dans le cadre universitaire.',
+    },
+    tech: ['React', 'Bootstrap', 'JavaScript'],
+    image: '/images/logo_vecteur.png',
+    github: null,
+    live: 'https://bradleyh212.github.io/seg_3525_devoir2/',
   },
   {
     id: 'project3',
-    label: { en: 'Memory game', fr: 'Jeu de mémoire' },
-    href: 'https://bradleyh212.github.io/seg_3525_devoir3/',
+    label: { en: 'Memory Game', fr: 'Jeu de mémoire' },
+    description: {
+      en: 'An interactive card-matching memory game with smooth animations.',
+      fr: 'Un jeu interactif de paires de cartes avec des animations fluides.',
+    },
+    tech: ['React', 'Bootstrap', 'JavaScript'],
+    image: '/images/jeu.png',
+    github: null,
+    live: 'https://bradleyh212.github.io/seg_3525_devoir3/',
   },
   {
     id: 'project4',
     label: { en: 'Geen Mind', fr: 'Geen Mind' },
-    href: 'https://bradleyh212.github.io/seg_3525_devoir4/',
+    description: {
+      en: 'A plant care and mindfulness web app to help users track their greenery.',
+      fr: 'Une application web de soin des plantes pour aider les utilisateurs à suivre leur verdure.',
+    },
+    tech: ['React', 'Bootstrap', 'JavaScript'],
+    image: '/images/plant_logo.png',
+    github: null,
+    live: 'https://bradleyh212.github.io/seg_3525_devoir4/',
   },
 ]

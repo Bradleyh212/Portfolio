@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
+import TechStack from './components/TechStack.jsx'
 import Projects from './components/Projects.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -13,6 +14,7 @@ export default function App() {
       <Navbar lang={lang} setLang={setLang} />
       <Hero lang={lang} />
       <About lang={lang} />
+      <TechStack lang={lang} />
       <Projects lang={lang} />
       <Footer lang={lang} />
     </div>
