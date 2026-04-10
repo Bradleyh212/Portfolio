@@ -9,10 +9,31 @@ export default function Projects({ lang }) {
         <h2>{heading}</h2>
         <div className="project_grid">
           {projects.map((p) => (
-            <div id={p.id} className="project_card" key={p.id}>
-              <a href={p.href} target="_blank" rel="noopener noreferrer" aria-label={p.label[lang]}>
-                <div className="project_placeholder">{p.label[lang]}</div>
-              </a>
+            <div className="project_card" key={p.id}>
+              <div className="card_image_wrap">
+                <img className="card_image" src={p.image} alt={p.label[lang]} />
+              </div>
+              <div className="card_body">
+                <h3 className="card_title">{p.label[lang]}</h3>
+                <p className="card_desc">{p.description[lang]}</p>
+                <div className="tech_tags">
+                  {p.tech.map((tag) => (
+                    <span className="tech_tag" key={tag}>{tag}</span>
+                  ))}
+                </div>
+                <div className="card_links">
+                  {p.github && (
+                    <a className="card_btn github" href={p.github} target="_blank" rel="noopener noreferrer">
+                      GitHub
+                    </a>
+                  )}
+                  {p.live && (
+                    <a className="card_btn live" href={p.live} target="_blank" rel="noopener noreferrer">
+                      Live Demo
+                    </a>
+                  )}
+                </div>
+              </div>
             </div>
           ))}
         </div>
